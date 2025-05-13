@@ -5,6 +5,8 @@ import { test } from "@playwright/test";
 import health from "./health.test";
 import ownerRegister from "./owner.test";
 import catTestCollection from "./cat.test";
+import deleteCat from "./deleteCat.test";
+import updateCat from "./adoptCat.test";
 
 import { ownerModel } from "../src/models/ownerModel";
 import { catModel } from "../src/models/catModel";
@@ -42,3 +44,5 @@ setup();
 test.describe(health);
 test.describe(ownerRegister);
 test.describe(catTestCollection);
+test.describe(deleteCat);
+test.describe(updateCat);
